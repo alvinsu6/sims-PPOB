@@ -1,0 +1,270 @@
+Styling Umum
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.user-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  overflow-x: hidden; /* Mencegah scrolling horizontal yang tidak diinginkan */
+}
+
+/* Homepage Container */
+.homepage-container {
+  width: 1800px; /* Pastikan container menggunakan lebar penuh */
+  margin: 0 auto;
+  padding: 0 16px; /* Ruang kiri dan kanan */
+  max-width: 100%; /* Tidak ada batasan maksimum */
+  box-sizing: border-box;
+}
+
+/* Header */
+.homepage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.homepage-title {
+  color: #e63946;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.homepage-nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* User Info Section */
+.homepage-user-info {
+  display: flex;
+  flex-wrap: wrap; /* Membuat elemen menyesuaikan lebar */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 16px 0;
+}
+
+.user-details {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.user-balance .balance-card {
+  background-color: #e63946;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 200px;
+}
+
+.balance-amount {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.toggle-balance {
+  background: none;
+  border: none;
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Services Section */
+.homepage-services {
+  margin-top: 20px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Kolom fleksibel */
+  gap: 16px;
+  padding: 16px;
+}
+
+.service-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.service-card img {
+  max-width: 60px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.service-card h3 {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Banner Section */
+.banner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+  padding: 16px 0;
+}
+
+.banner-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.banner-info h3 {
+  margin: 8px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.banner-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Promo Section */
+.promo-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.promo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.promo-card h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.promo-card p {
+  font-size: 14px;
+}
+.balance-card {
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+.balance-card h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.toggle-balance-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-balance-button:hover {
+  background-color: #0056b3;
+}
+ 
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .homepage-container{
+        width: 400px;
+    }
+  .homepage-user-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .promo-cards {
+    grid-template-columns: 1fr;
+  }
+}

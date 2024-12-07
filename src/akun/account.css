@@ -1,0 +1,169 @@
+/* Untuk memastikan kontainer utama di tengah */
+.account-container {
+    width: 1200px;
+    max-width: 1200px; /* Lebar maksimal */
+    margin: 0 auto; /* Tengah secara horizontal */
+    padding: 20px; /* Ruang di dalam */
+    background-color: #ffffff; /* Latar belakang kontainer */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+  }
+  
+  /* Untuk memastikan seluruh halaman tertata di tengah */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+   
+    
+    min-height: 100vh; /* Pastikan konten memenuhi tinggi layar */
+  }
+  
+  .account-header {
+    display: flex;
+    justify-content: space-between; /* Jarak antara elemen header */
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .account-title {
+    font-size: 24px;
+    color: #e63946;
+  }
+  
+  .account-nav {
+    display: flex;
+    gap: 15px; /* Jarak antar link */
+  }
+  
+  .account-nav a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .account-nav a.active {
+    color: #e63946;
+  }
+  
+  .profile-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-avatar {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .profile-avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-avatar .edit-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: #e63946;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Jarak antar input */
+  }
+  
+  .profile-form label {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .profile-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .save-button,
+  .edit-button,
+  .logout-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .save-button {
+    background-color: #e63946;
+    color: white;
+  }
+  
+  .edit-button {
+    background-color: #000;
+    color: white;
+  }
+  
+  .logout-button {
+    background-color: white;
+    color: #e63946;
+    border: 1px solid #e63946;
+  }
+  .profile-avatar {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+  }
+  
+  .edit-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-icon:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .edit-icon-image {
+    width: 20px;
+    height: 20px;
+  }
+  
+  
+  /* Responsif untuk perangkat kecil */
+  @media (max-width: 768px) {
+    .account-container {
+      width: 90%; /* Lebar dinamis untuk layar kecil */
+      padding: 15px;
+    }
+  }
+  

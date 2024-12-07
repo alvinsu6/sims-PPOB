@@ -1,0 +1,104 @@
+.transaction-history-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.balance-card {
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.balance-card h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: white;
+}
+
+.toggle-balance-button {
+  background-color: #d32f2f;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.toggle-balance-button:hover {
+  background-color: #b71c1c;
+}
+
+.transactions {
+  margin-top: 20px;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-item .amount {
+  font-weight: bold;
+}
+
+.transaction-item .positive {
+  color: green;
+}
+
+.transaction-item .negative {
+  color: red;
+}
+
+.transaction-item .date {
+  color: #555;
+}
+
+.show-more-button {
+  background-color: #1976d2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+.show-more-button:hover {
+  background-color: #1565c0;
+}

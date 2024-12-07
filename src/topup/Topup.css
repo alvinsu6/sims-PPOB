@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .topup-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .topup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .topup-header h1 {
+    color: #e63946;
+  }
+  
+  .topup-header nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+  }
+  
+  .topup-header nav a.active {
+    color: #e63946;
+    font-weight: bold;
+  }
+  
+  .topup-content {
+    margin-top: 20px;
+  }
+  
+  .user-info {
+    text-align: center;
+  }
+  
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .balance-card {
+    background-color: #e63946;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .topup-form {
+    margin-top: 30px;
+  }
+  
+  .input-amount {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .quick-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .quick-button {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .quick-button:hover {
+    background-color: #e63946;
+    color: white;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #c12734;
+  }
+  
+  .message {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .message.success {
+    color: green;
+  }
+  
+  .message.error {
+    color: red;
+  }
+  /* Gambar background pada card saldo */
+.balance-card {
+   
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    height: 150px; /* Sesuaikan tinggi kartu */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+  
+  /* Modal Styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .modal h3 {
+    margin-bottom: 20px;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .confirm-btn, .cancel-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .confirm-btn {
+    background-color: #e63946;
+    color: white;
+  }
+  
+  .cancel-btn {
+    background-color: #ccc;
+  }
+  
+  .confirm-btn:hover {
+    background-color: #c12734;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #999;
+  }
+  
+  /* Responsiveness for modal */
+  @media (max-width: 600px) {
+    .modal {
+      padding: 15px;
+    }
+  }
+  
